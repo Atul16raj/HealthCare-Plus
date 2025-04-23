@@ -1,0 +1,21 @@
+{
+  "name": "HealthCare Plus",
+  "short_name": "HC Plus",
+  "description": "Your trusted healthcare partner in Mumbai",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3498db",
+  "icons": [
+    {
+      "src": "https://img.freepik.com/free-vector/medical-logo-design_23-2149611193.jpg",
+      "sizes": "192x192",
+      "type": "image/jpg"
+    },
+    {
+      "src": "https://img.freepik.com/free-vector/medical-logo-design_23-2149611193.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }
+  ]
+} 

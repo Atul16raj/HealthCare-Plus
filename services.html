@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - HealthCare Plus</title>
+    <meta name="description" content="Explore our comprehensive healthcare services including general checkups, specialist consultations, and emergency care in Mumbai.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#3498db">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful');
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="navbar" role="banner">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img src="https://img.freepik.com/free-vector/medical-logo-design_23-2149611193.jpg" 
+                     alt="HealthCare Plus Logo" 
+                     class="logo" 
+                     loading="eager" 
+                     width="50" 
+                     height="50">
+                <a href="index.html" class="logo-text" aria-label="HealthCare Plus Home">
+                    Health<span>Care</span> Plus
+                </a>
+            </div>
+
+            <nav class="nav-container" role="navigation" aria-label="Main navigation">
+                <ul class="nav-links" role="menubar">
+                    <li role="none">
+                        <a href="index.html" 
+                           role="menuitem" 
+                           class="nav-link">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="about.html" 
+                           role="menuitem"
+                           class="nav-link">
+                            <i class="fas fa-info-circle" aria-hidden="true"></i>
+                            <span>About Us</span>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="services.html" 
+                           role="menuitem"
+                           aria-current="page"
+                           class="nav-link active">
+                            <i class="fas fa-stethoscope" aria-hidden="true"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="telemedicine.html" 
+                           role="menuitem"
+                           class="nav-link">
+                            <i class="fas fa-video" aria-hidden="true"></i>
+                            <span>Telemedicine</span>
+                        </a>
+                    </li>
+                    <li role="none">
+                        <a href="contact.html" 
+                           role="menuitem"
+                           class="nav-link">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="nav-buttons">
+                <button class="theme-toggle" 
+                        aria-label="Toggle dark mode"
+                        title="Toggle dark mode">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+                <button class="hamburger" 
+                        aria-label="Toggle menu" 
+                        aria-expanded="false" 
+                        aria-controls="mobile-menu">
+                    <i class="fas fa-bars" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav id="mobile-menu" 
+         class="mobile-menu" 
+         role="navigation" 
+         aria-label="Mobile navigation">
+        <ul class="nav-links" role="menubar">
+            <li role="none">
+                <a href="index.html" 
+                   role="menuitem" 
+                   class="nav-link">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li role="none">
+                <a href="about.html" 
+                   role="menuitem"
+                   class="nav-link">
+                    <i class="fas fa-info-circle" aria-hidden="true"></i>
+                    <span>About Us</span>
+                </a>
+            </li>
+            <li role="none">
+                <a href="services.html" 
+                   role="menuitem"
+                   aria-current="page"
+                   class="nav-link active">
+                    <i class="fas fa-stethoscope" aria-hidden="true"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li role="none">
+                <a href="telemedicine.html" 
+                   role="menuitem"
+                   class="nav-link">
+                    <i class="fas fa-video" aria-hidden="true"></i>
+                    <span>Telemedicine</span>
+                </a>
+            </li>
+            <li role="none">
+                <a href="contact.html" 
+                   role="menuitem"
+                   class="nav-link">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section class="services-hero">
+            <div class="hero-content">
+                <h1>Our Services</h1>
+                <p>Comprehensive Healthcare Solutions</p>
+            </div>
+        </section>
+
+        <section class="services-content">
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="https://img.freepik.com/free-photo/doctor-with-his-arms-crossed-white-background_1368-5790.jpg" alt="Primary Care" loading="lazy">
+                    <h3>Primary Care</h3>
+                    <p>Comprehensive health check-ups and preventive care services</p>
+                    <ul>
+                        <li>Annual Physical Exams</li>
+                        <li>Vaccinations</li>
+                        <li>Health Screenings</li>
+                        <li>Chronic Disease Management</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://img.freepik.com/free-photo/doctor-wearing-lab-coat-with-stethoscope-isolated_1303-29791.jpg" alt="Specialist Care" loading="lazy">
+                    <h3>Specialist Care</h3>
+                    <p>Expert medical care from our specialized doctors</p>
+                    <ul>
+                        <li>Cardiology</li>
+                        <li>Orthopedics</li>
+                        <li>Pediatrics</li>
+                        <li>Gynecology</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://img.freepik.com/free-photo/emergency-room-hospital_23-2148982267.jpg" alt="Emergency Care" loading="lazy">
+                    <h3>Emergency Care</h3>
+                    <p>24/7 emergency medical services</p>
+                    <ul>
+                        <li>Emergency Room</li>
+                        <li>Trauma Care</li>
+                        <li>Critical Care</li>
+                        <li>Ambulance Services</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://img.freepik.com/free-photo/doctor-consulting-patient-video-call_23-2149123456.jpg" alt="Telemedicine" loading="lazy">
+                    <h3>Telemedicine</h3>
+                    <p>Virtual healthcare consultations</p>
+                    <ul>
+                        <li>Video Consultations</li>
+                        <li>Online Prescriptions</li>
+                        <li>Remote Monitoring</li>
+                        <li>Digital Health Records</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://img.freepik.com/free-photo/medical-equipment-laboratory_23-2148982268.jpg" alt="Diagnostic Services" loading="lazy">
+                    <h3>Diagnostic Services</h3>
+                    <p>Advanced medical testing and imaging</p>
+                    <ul>
+                        <li>Laboratory Tests</li>
+                        <li>X-Ray & MRI</li>
+                        <li>Ultrasound</li>
+                        <li>CT Scans</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <img src="https://img.freepik.com/free-photo/pharmacist-holding-medicine-box_23-2148982269.jpg" alt="Pharmacy Services" loading="lazy">
+                    <h3>Pharmacy Services</h3>
+                    <p>Comprehensive pharmacy services</p>
+                    <ul>
+                        <li>Prescription Medications</li>
+                        <li>Over-the-counter Drugs</li>
+                        <li>Medication Counseling</li>
+                        <li>Home Delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <section class="footer-section">
+                <h3>HealthCare Plus</h3>
+                <p>Providing quality healthcare services since 1995</p>
+                <nav class="social-icons" aria-label="Social media links">
+                    <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" aria-label="Follow us on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                </nav>
+            </section>
+            <section class="footer-section">
+                <h3>Quick Links</h3>
+                <nav aria-label="Footer navigation">
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="telemedicine.html">Telemedicine</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="footer-section">
+                <h3>Contact Info</h3>
+                <address>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+1234567890">+1 234 567 890</a></p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@healthcareplus.com">info@healthcareplus.com</a></p>
+                    <p><i class="fas fa-location-dot" aria-hidden="true"></i> 123 Healthcare Avenue, Mumbai, Maharashtra 400001</p>
+                </address>
+            </section>
+        </div>
+    </footer>
+
+    <script src="service.js"></script>
+</body>
+</html> 
